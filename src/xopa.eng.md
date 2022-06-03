@@ -139,6 +139,8 @@ at the beginning of the line and (b) spaces for multiline macros.
 * Return type, modifiers, and the opening curly bracket should all be on the same
   line (unless it exceeds 80 characters). In that case, wrap after parameters
   reach the 80 character limit, and align (with spaces!) to the first parameter.
+  If the function name is too long, then you should consider giving the function
+  a shorter name.
 
 * Functions not used outside of the translation unit should be declared with the
   `static` modifier.
@@ -215,7 +217,7 @@ if (foo() < 0)
 
 ### Bad Examples
 
-```
+```c
 if (foo() == -1) bar();
 
 if (foo() == 0) return;
