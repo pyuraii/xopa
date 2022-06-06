@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
 	
 	printf("1 bottle of beer on the wall, "
 	       "1 bottle of beer.\n"
-	       "Take one down and pass it around,"
+	       "Take one down and pass it around, "
 	       "no more bottles of beer on the wall.\n\n"
 
 	       "No more bottles of beer on the wall, "
