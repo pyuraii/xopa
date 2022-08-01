@@ -28,8 +28,7 @@ int main(int argc, char *argv[]) {
 	       "No more bottles of beer on the wall, "
 	       "no more bottles of beer.\n"
 	       "Go to the store and buy some more, "
-	       "99 bottles of beer on the wall.\n\n"
-	);
+	       "99 bottles of beer on the wall.\n\n");
 
 	return 0;
 }
