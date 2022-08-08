@@ -1,7 +1,7 @@
 # xopa &sect; a C style guide for humans
 
 xopa is a C style guide that produces readable, organized code that looks good
-in any terminal. (Think of it as the GNU "coding guidelines", but good.)
+in any terminal. (Think of it as the [GNU "Coding Guidelines"](https://www.gnu.org/prep/standards/), but good.)
 
 Table of contents: [Organization](#organization)
 
@@ -70,13 +70,13 @@ int main(int argc, char *argv[]) {
 
 ## Features
 
-* Use C11 (ISO/IEC 9899:2011) without extensions. In scenarios that require an
-  older standard, use C99 (ISO/IEC 9899:1999). When working with POSIX APIs, use
+* Use [C11 (ISO/IEC 9899:2011)](https://www.iso.org/standard/57853.html) without extensions. In scenarios that require an
+  older standard, use [C99 (ISO/IEC 9899:1999)](https://www.iso.org/standard/29237.html). When working with POSIX APIs, use
   POSIX.1-2008.
 
 * In scenarios where code must be usable on systems that do not support modern C
   features, use `/* ... */` for comments instead of `// ...` and do not
-  initialize variables in for loops.
+  initialize variables in `for` loops.
 
 ### Example (C99)
 
