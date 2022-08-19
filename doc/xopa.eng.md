@@ -3,7 +3,27 @@
 xopa is a C style guide that produces readable, organized code that looks good
 in any terminal. (Think of it as the GNU "coding guidelines", but good.)
 
-Table of contents: [Organization](#organization)
+Table of contents:
+
+[Organization](#organization)
+
+[Structure](#structure)
+
+[Features](#features)
+
+[Blocks](#blocks)
+
+[Whitespace](#whitespace)
+
+[Functions](#functions)
+
+[Variables](#variables)
+
+[Keywords](#keywords)
+
+[Headers](#headers)
+
+[Misc.](#misc)
 
 ## Organization
 
