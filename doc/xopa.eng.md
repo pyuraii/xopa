@@ -1,29 +1,20 @@
-# xopa &sect; a C style guide for humans
+# xopa &sect; a C style guide for humans [v1.0.0]
 
 xopa is a C style guide that produces readable, organized code that looks good
 in any terminal. (Think of it as the GNU "coding guidelines", but good.)
 
 Table of contents:
 
-[Organization](#organization)
-
-[Structure](#structure)
-
-[Features](#features)
-
-[Blocks](#blocks)
-
-[Whitespace](#whitespace)
-
-[Functions](#functions)
-
-[Variables](#variables)
-
-[Keywords](#keywords)
-
-[Headers](#headers)
-
-[Misc.](#misc)
+- [Organization](#organization)
+- [Structure](#structure)
+- [Features](#features)
+- [Blocks](#blocks)
+- [Whitespace](#whitespace)
+- [Functions](#functions)
+- [Variables](#variables)
+- [Keywords](#keywords)
+- [Headers](#headers)
+- [Misc.](#misc)
 
 ## Organization
 
@@ -51,6 +42,7 @@ token.h
 ## Structure
 
 * All of your files should have the following layout:
+
 	* Comment with a short explanation of the tool
 	* `#include` statements for external libraries
 	* `#include` statements for internal files
@@ -80,7 +72,7 @@ int main(int argc, char *argv[]) {
 	for (int i = 0; i < argc; i++) {
 		#ifdef FOO
 			// `bar` is bad. `foo` is better.
-			if (strcmp(argv[i] "bar") == 0) return -1;
+			if (strcmp(argv[i], "bar") == 0) return -1;
 		#endif
 	}
 
@@ -98,7 +90,7 @@ int main(int argc, char *argv[]) {
   features, use `/* ... */` for comments instead of `// ...` and do not
   initialize variables in for loops.
 
-### Example (C99)
+### Example (C89)
 
 ```c
 #include <stdio.h>
