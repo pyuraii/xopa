@@ -1,8 +1,7 @@
 # xopa &sect; una guía de estilo de C para humanos [v1.0.0]
 
 xopa es una guia de estilo de C que produce código legible y organizado que luce
-bien en cualquier terminal. (Piensa de el como el [GNU "Coding
-Guidelines"](https://www.gnu.org/prep/standards/) pero mejor)
+bien en cualquier terminal.
 
 Tabla de contenidos:
 
@@ -20,11 +19,11 @@ Tabla de contenidos:
 ## Organizacion
 
 * Divide tu codigo en multiples archivos siempre que puedas, teniendo un archivo
-	por cada semento lógico del programa.
+  por cada semento lógico del programa.
 
 * Cuando necesites muchas directivas de compilador, usa archivos header. Cuando
-	un archivo header solo se use en un archivo (vamos a llamarlo `foobar.c`,),
-	llama el archivo header acorde (en este caso `foobar.h`).
+  un archivo header solo se use en un archivo (vamos a llamarlo `foobar.c`,),
+  llama el archivo header acorde (en este caso `foobar.h`).
 
 * Pon tu función 'main' en 'main.c' o `<nombre de programa>.c`.
 
@@ -169,7 +168,7 @@ int foo(char *bar) {
 }
 
 int baz(char *qux, char* foo2, char *bar2, char *baz2, char *qux2, char *foo3,
-        char *bar2) {
+	char *bar2) {
 	/* ... */
 }
 ```
@@ -177,10 +176,10 @@ int baz(char *qux, char* foo2, char *bar2, char *baz2, char *qux2, char *foo3,
 ## Variables
 
 * Variables globales no deberían ser usadas fuera de la unidad de traducción con
-  el modificador static
+  el modificador static.
 
 * Cuando declares un pointer, pon el `*` a la izquierda del identificador de la
-  variable no a la derecha de el tipo de variable
+  variable no a la derecha de el tipo de variable.
 
 ### Ejemplo
 
@@ -191,12 +190,12 @@ char *var = malloc(5);
 ## Palabras clave
 
 * Usa un espacio despues de `if`, `for`, `while`, `switch`, `do`, etc. teniendo
-  en cuenta que no son llamadas a una función
+  en cuenta que no son llamadas a una función.
 
 * No uses un espacio despues de la apertura de `(` o directamente antes de el
-  `)` de cierre
+  `)` de cierre.
 
-* No uses un espacio con `sizeof` y usa parentesis
+* No uses un espacio con `sizeof` y usa parentesis.
 
 ### Ejemplo
 
@@ -220,7 +219,8 @@ necesitan ser incluidas en otro orden, escribe un comentario explicando por qué
 
 ## Miscelaneo
 
-cuando una función devuelve `-1` en error, comprueba `-1`, pero comprueba `0`.
+Cuando una función devuelve `-1` en caso de error, compruebe `-1`, pero
+compruebe contra `0`.
 
 ### Buen Ejemplo
 
