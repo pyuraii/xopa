@@ -1,7 +1,7 @@
 # xopa &sect; a C style guide for humans [v1.0.0]
 
 xopa is a C style guide that produces readable, organized code that looks good
-in any terminal. (Think of it as the GNU "coding guidelines", but good.)
+in any terminal.	
 
 Table of contents:
 
@@ -14,7 +14,7 @@ Table of contents:
 - [Variables](#variables)
 - [Keywords](#keywords)
 - [Headers](#headers)
-- [Misc.](#misc)
+- [Miscellaneous](#miscellaneous)
 
 ## Organization
 
@@ -216,7 +216,7 @@ must be included in a specific order, write a comment explaining that.
 #include <stdlib.h>
 ```
 
-## Misc.
+## Miscellaneous
 
 When a function returns `-1` on error, check for `-1`, but check against `0`.
 
