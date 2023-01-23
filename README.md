@@ -9,3 +9,9 @@ translations.
 
 * [@pyuraii](https://github.com/pyuraii) - English translation
 * [@MrSlime142](https://github.com/MrSlime142) - Spanish translation
+
+## Special thanks
+
+* ...to the team at [suckless.org](https://suckless.org) for their
+  [coding style](https://suckless.org/coding_style/) document, which helped
+  shape this style guide
